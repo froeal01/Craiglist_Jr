@@ -1,0 +1,10 @@
+<div class="container">
+<form action='/categories/<%=@post.category_id%>/posts/<%=@post.id%>/edit/finish'  method="POST">
+  <p>title</p><input type="text" value = <%=@post.title%> name="post[title]">
+  <p>description</p><input height= "15px" type="text" value = <%=@post.description%> name="post[description]" placeholder="Enter description"></input>
+  <p>price</p><input type="number"  value = <%=@post.price%> name="post[price]" >
+  <p>email</p><input type="text" value = <%=@post.email%> name="post[email]" placeholder="Foo@bar.com">
+</br>
+  <input type="submit" value="Submit">
+</form>
+</div>

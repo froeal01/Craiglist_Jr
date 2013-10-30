@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Craigslist Jr.</h1>
+  <p>Home to sub-par items</p>
+
+  <ul>
+  <% @categories.each do |cat| %>
+      <li><a href='/categories/<%=cat.id%>'><%= cat.name %></a></li>
+  <% end %> 
+  </ul>
+</div>

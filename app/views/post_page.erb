@@ -1,0 +1,19 @@
+<div class="container">
+<% if @post %>
+ <h1><%= @post.title %></h1>
+ <p><%= @post.description %> 
+    <%= @post.price %>
+    <%= @post.email %> </p>
+<% end %>
+
+<!-- <input = "Submit" value="Edit Post"> -->
+<!-- <input = "Submit" value="Delete Post"> -->
+
+<a href="/categories/<%=@post.category_id%>/posts/<%=@post.id%>/edit"><button type="button" onclick="">Edit Post</button></a>
+
+<form action="/categories/<%=@post.category_id%>/posts/<%=@post.id%>/delete" method="POST">
+  <input type="submit" value="Delete Post">
+</form>
+
+
+</div>
